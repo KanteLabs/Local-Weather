@@ -1,0 +1,16 @@
+.weatherApp{
+	text-align: center;
+	margin: auto;
+}
+.weatherApp > p{
+	font-size: 5em;
+}
+.currentTemp{
+	font-size: 4em;
+}
+
+.weekForecast ul li{
+	list-style-type: none;
+	display: inline;
+	font-size: 3em;
+}
