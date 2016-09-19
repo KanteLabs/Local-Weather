@@ -2,15 +2,12 @@
 	text-align: center;
 	margin: 0 auto;
 }
-.weatherApp > p{
-	font-size: 5em;
-}
-.currentTemp{
-	font-size: 4em;
+.currentLocation, .currentTemp{
+	font-size: 3em;
 }
 
-.currentLocation{
-	font-size: 3em;
+.imgCondition{
+	width: 7em;
 }
 
 .currentCondition{
