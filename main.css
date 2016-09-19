@@ -1,6 +1,6 @@
 .weatherApp{
 	text-align: center;
-	margin: auto;
+	margin: 0 auto;
 }
 .weatherApp > p{
 	font-size: 5em;
@@ -9,8 +9,15 @@
 	font-size: 4em;
 }
 
-.weekForecast ul li{
+.currentLocation{
+	font-size: 3em;
+}
+
+.currentCondition{
+	font-size: 2em;
+}
+
+.weatherDetails ul li{
 	list-style-type: none;
-	display: inline;
 	font-size: 3em;
 }
