@@ -3,11 +3,14 @@
 	margin: auto;
 	width: auto;
 	height: 80%;
+	margin-top: 5em;
 }
-
+body {
+  font-family: '';
+  color: #fff;
+  background-color: #161616;
+}
 .currentLocation{
-	color: #fff;
-	background-color: skyblue;
 	font-size: 5em;
 }
 .currentTemp, .currentTempC, .currentCondition{
@@ -15,11 +18,26 @@
 }
 
 .imgCondition{
-	width: 7em;
+	width: 8em;
 }
 
 .weatherDetails ul li{
 	list-style-type: none;
-	display: inline-block;
+	display: block;
 	font-size: 3em;
+	text-align: left;
+	position: relative;
+	left: -50%;
+}
+.weatherDetails{
+	float: left;
+    position: relative;
+    left: 50%;
+}
+footer{
+	text-align: center;
+	font-size: 1em;
+}
+footer p a{
+	text-decoration: none;
 }
