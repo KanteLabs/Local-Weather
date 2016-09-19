@@ -4,7 +4,11 @@ var city = "";
 var temp = 0;
 var tempC = 0;
 	
+<<<<<<< HEAD
 function getLocation(){  
+=======
+function getWeatherForCurrentLocation(){  
+>>>>>>> origin/master
 	$.get("http://freegeoip.net/json/", 
 	function(json){
 		latitude = json.latitude;
@@ -45,5 +49,10 @@ function WeatherApp(){
 
 
 $(function() {
+<<<<<<< HEAD
   getLocation();
 });
+=======
+  getWeatherForCurrentLocation();
+});
+>>>>>>> origin/master
