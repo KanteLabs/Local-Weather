@@ -5,7 +5,7 @@ var temp = 0;
 var tempC = 0;
 	
 function getLocation(){  
-	$get("http://freegeoip.net/json/", 
+	$.get("http://freegeoip.net/json/", 
 	function(json){
 		latitude = json.latitude;
 		longitude = json.longitude;
@@ -21,7 +21,7 @@ function WeatherApp(){
 		var status = "http://openweathermap.org/img/w/"+data.weather[0].icon+".png";
 		var description = data.weather[0].description;
 		var temp = Math.floor(data.main.temp);
-		$(".currentLocation").html(json.region_name);
+		$(".currentLocation").html(data.name);
 		$(".currentCondition").html(data.weather[0].main);
 		$(".imgCondition").attr("src",status);
 		$(".imgCondition").attr("title",description);
@@ -45,5 +45,5 @@ function WeatherApp(){
 
 
 $(function() {
-  WeatherApp();
+  getLocation();
 });
