@@ -1,8 +1,16 @@
 .weatherApp{
 	text-align: center;
 	margin: auto;
+	width: auto;
+	height: 80%;
 }
-.currentLocation, .currentTemp, .currentTempC{
+
+.currentLocation{
+	color: #fff;
+	background-color: skyblue;
+	font-size: 5em;
+}
+.currentTemp, .currentTempC, .currentCondition{
 	font-size: 3em;
 }
 
@@ -10,11 +18,8 @@
 	width: 7em;
 }
 
-.currentCondition{
-	font-size: 2em;
-}
-
 .weatherDetails ul li{
 	list-style-type: none;
+	display: inline-block;
 	font-size: 3em;
 }
