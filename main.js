@@ -19,7 +19,7 @@ function WeatherApp(){
 	$.get("http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&mode=JSON&units=imperial&appid=9815c2fc2b5f1abd1a9ced35afe57d77", 
 	function(json){
 		data = json;
-		var status = "http://openweathermap.org/img/w/"+data.weather[0].icon+".png";
+		var status = "https://openweathermap.org/img/w/"+data.weather[0].icon+".png";
 		var description = data.weather[0].description;
 		var temp = Math.floor(data.main.temp);
 		var code = data.weather[0].id;
