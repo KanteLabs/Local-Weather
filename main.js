@@ -16,7 +16,7 @@ function getLocation(){
 };	
 
 function WeatherApp(){
-	$.get("http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&mode=JSON&units=imperial&appid=9815c2fc2b5f1abd1a9ced35afe57d77", 
+	$.get("https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&mode=JSON&units=imperial&appid=9815c2fc2b5f1abd1a9ced35afe57d77", 
 	function(json){
 		data = json;
 		var status = "https://openweathermap.org/img/w/"+data.weather[0].icon+".png";
