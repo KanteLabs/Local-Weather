@@ -6,7 +6,7 @@ var tempC = 0;
 var code = 0;
 	
 function getLocation(){  
-	$.get("http://freegeoip.net/json/", 
+	$.get("https://freegeoip.net/json/", 
 	function(json){
 		latitude = json.latitude;
 		longitude = json.longitude;
