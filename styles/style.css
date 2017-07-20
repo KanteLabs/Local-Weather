@@ -1,0 +1,76 @@
+body {
+    background: rgba(60, 137, 109, 0.8);
+}
+
+.app {
+    border: 1px solid black;
+    background: linear-gradient(120deg, rgba(252, 171, 16, 1), #2B9EB3);
+    box-shadow: 10px 10px 20px 0px black;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 8em;
+    padding: 1em;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    line-height: 170%;
+}
+input.zipcode {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 1em 0em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    display: block;
+}
+
+.main {
+    display: none;
+}
+
+h1#location {
+    font-size: 2em;
+    opacity: 0.8;
+}
+
+img {width: 5em;}
+
+p#icon {line-height: 0;}
+
+p#currTemp::before {
+    content: 'Currently it is: ';
+}
+
+p#currTemp::after {
+    content: ' degrees';
+}
+
+.content {
+    display: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+p#min::before {
+    content: 'Min: ';
+}
+
+p#max::before {
+    content: 'Max: ';
+}
+
+p#max::after {
+    content: ' degrees';
+}
+
+p#min::after {
+    content: ' degrees';
+}

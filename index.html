@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+  <title>Weather app</title>
+  <link rel='stylesheet' type='text/css' href='./styles/reset.css'>
+  <link rel='stylesheet' type='text/css' href='./styles/style.css'>
+</head>
+<body>
+  <div class="app">
+    <input type="text" placeholder="Type Zip-Code" class="zipcode"/>
+    <div class="main">
+      <h1 id="location"></h1>
+      <p id="icon"></p>
+      <p id="currTemp"></p>
+      <p id="caption"></p>
+    </div>
+    <div class="content">
+      <ul>
+        <li><p id="min"></p></li>
+        <li><p id="max"></p></li>
+      </ul>
+    </div>
+  </div>
+  <script src='./src/jquery.js'></script>
+  <script src='./src/main.js'></script>
+</body>
+</html>
